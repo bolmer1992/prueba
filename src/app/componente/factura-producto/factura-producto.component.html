@@ -1,0 +1,19 @@
+<div>
+    <h1>Factura</h1>
+    <table>
+     <tr>
+      <th>Producto</th>
+      <th>Precio</th>
+      <th>Cantidad</th>
+      <th>Total</th>
+     </tr>
+     <tr *ngFor="let producto of productosCompra">
+        
+            <td>{{producto.productoInfo.nombre}}</td>
+            <td>{{producto.productoInfo.valor}}</td>
+            <td>{{producto.cantidad}}</td>
+            <td>{{obtenerTotal(producto)}}</td>
+     </tr>
+    </table>
+</div>
+
